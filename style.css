@@ -1,0 +1,517 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&family=Poppins:wght@300&family=Roboto:wght@300&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+body::-webkit-scrollbar {
+  background-color: white;
+  width: 0.4rem;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #ef233c;
+}
+
+h1, h2, h3, h4, h5, h6, a, ul, li, p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  background-color: #ef233c;
+  border: none;
+  padding: 0.8rem 1.6rem;
+  border-radius: 3rem;
+  color: white;
+  font-size: large;
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
+  border: 0.1rem solid transparent;
+}
+button:hover {
+  background-color: white;
+  border-color: #ef233c;
+  color: #ef233c;
+}
+
+h1 {
+  color: #248277;
+  font-size: 3rem;
+}
+
+h2 {
+  color: #248277;
+  font-size: 2.2rem;
+}
+
+h3 {
+  color: #ef233c;
+  font-size: 1.4rem;
+}
+
+h4 {
+  color: #ef233c;
+  font-size: 1.2rem;
+}
+
+h5 {
+  color: rgb(116, 116, 116);
+  font-weight: 500;
+  font-size: 1.15rem;
+  letter-spacing: 0.05rem;
+  line-height: 1.7rem;
+}
+
+p {
+  color: rgb(116, 116, 116);
+  font-size: 1.1em;
+  letter-spacing: 0.04em;
+  line-height: 1.5em;
+}
+
+a {
+  color: #248277;
+  transition: 0.3s ease-in-out;
+  font-size: 1.3em;
+  margin: 0 2em;
+}
+a:hover {
+  color: #ef233c;
+}
+
+.preloader {
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("images/preloader.gif");
+  background-size: 10rem;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: fixed;
+  background-color: white;
+  z-index: 5;
+}
+
+.scroolToTop {
+  height: 5rem;
+  width: 5rem;
+  background-color: #fce0e3;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  background-image: url("images/virus.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 3rem;
+  border-radius: 4rem;
+  position: fixed;
+  bottom: 10px;
+  right: 25px;
+  cursor: pointer;
+  z-index: 5;
+  display: none;
+}
+
+.info .title {
+  margin-top: 0.5rem;
+}
+.info .description {
+  margin: 1.2rem 0;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  margin-top: 0;
+  padding: 0.6rem;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+nav .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+}
+nav .container .brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+}
+nav .container .brand .responsive-toggle {
+  display: none;
+}
+nav .container .links ul li:nth-child(1) a {
+  color: #ef233c;
+}
+nav .container .links ul li button {
+  background-color: white;
+  border: 0.1rem solid #ef233c;
+  color: #ef233c;
+}
+
+nav {
+  background-color: rgb(246, 243, 243);
+  top: 0;
+  width: 100%;
+}
+nav .container .brand .logo img {
+  width: 4rem;
+  height: 4rem;
+}
+nav .container .brand .logo h2 {
+  padding: 0.7rem 2rem;
+}
+nav .container .brand div {
+  display: flex;
+}
+
+.starter {
+  display: flex;
+  margin: 2rem 0;
+  padding-top: 4rem;
+}
+.starter .info {
+  margin: 3rem 2rem 0 4rem;
+}
+.starter .info .title {
+  margin: 0.55rem 0 2rem 0;
+}
+.starter .info .description {
+  margin-bottom: 2rem;
+}
+.starter .image img {
+  max-width: 100%;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  margin: 2rem 4rem;
+  gap: 5rem;
+}
+.about button {
+  background-color: #ffe6e8;
+  color: #ef233c;
+}
+.about .image img {
+  width: 40rem;
+}
+
+.contagion {
+  margin: 2rem 4rem;
+}
+.contagion .info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.contagion .info .description {
+  width: 40%;
+  text-align: center;
+}
+.contagion .content {
+  position: relative;
+}
+.contagion .content .virus1 {
+  position: absolute;
+  left: -9.6rem;
+  top: 7rem;
+}
+.contagion .content .virus1 img {
+  height: 20rem;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  margin-top: 1rem;
+}
+.cards .card {
+  height: 25rem;
+  width: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: 0.2s ease-in-out;
+  border-bottom: 0.2rem solid transparent;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+.cards .card .text {
+  padding: 2rem;
+  text-align: center;
+}
+.cards .card .text .title {
+  margin-bottom: 1rem;
+}
+.cards .card img {
+  max-height: 8rem;
+}
+.cards .card:hover {
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 4px 24px, rgba(17, 17, 26, 0.1) 0px 8px 56px;
+  border-bottom-color: #ef233c;
+}
+
+.symptoms {
+  margin: 4rem;
+}
+.symptoms .info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.symptoms .info .description {
+  width: 40%;
+  text-align: center;
+}
+.symptoms .image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.symptoms .image img {
+  width: 90%;
+}
+
+.solution {
+  position: relative;
+}
+.solution .virus {
+  position: absolute;
+  top: 34rem;
+}
+.solution .virus img {
+  height: 12rem;
+}
+.solution .virus2 {
+  position: absolute;
+  top: 104rem;
+  right: 0;
+}
+.solution .virus2 img {
+  height: 12rem;
+}
+.solution .virus3 {
+  position: absolute;
+  top: 99rem;
+  right: 2rem;
+}
+.solution .virus3 img {
+  height: 6rem;
+}
+
+.content {
+  margin: 4rem 9rem;
+}
+.content .solution {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+.content .solution .solution-info {
+  display: flex;
+  gap: 2rem;
+}
+.content .solution .solution-info .round {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffe6e8;
+  color: #ef233c;
+  font-size: 2rem;
+  border-radius: 100%;
+  height: 5rem;
+  width: 20rem;
+}
+.content .solution .solution-info .info-container .title {
+  margin-bottom: 0.5rem;
+}
+.content .solution .image img {
+  height: 30rem;
+}
+
+.solution .info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.solution .info .description {
+  width: 40%;
+  text-align: center;
+}
+
+.map {
+  margin: 0rem 3rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 3rem;
+}
+.map .image-container {
+  position: relative;
+}
+.map .image-container .image img {
+  height: 30rem;
+}
+.map .image-container .map-search {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+  cursor: pointer;
+}
+.map .image-container .map-search i {
+  color: #ef233c;
+  font-size: 1.4rem;
+}
+.map .map-options {
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+  position: absolute;
+  padding: 1rem;
+  background-color: white;
+  top: 0;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+  cursor: pointer;
+}
+.map .map-options i {
+  color: rgb(73, 73, 73);
+}
+.map .map-options .arrows {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 1rem 0;
+}
+.map .map-options .arrows i {
+  line-height: 0;
+  padding: 0;
+  margin: 0;
+  font-size: 2, 4rem;
+}
+.map .map-options .arrows i:nth-of-type(1) {
+  color: #ef233c;
+}
+.map .map-options .arrows i:nth-of-type(2) {
+  color: gray;
+}
+
+.reports {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+  height: -moz-max-content;
+  height: max-content;
+  width: 20rem;
+  padding: 2rem;
+}
+.reports .title-container {
+  margin-bottom: 1rem;
+}
+.reports .report-container .report {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.6rem;
+}
+.reports .report-container .report .country {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.reports .report-container .report .country img {
+  height: 3rem;
+}
+.reports .report-container .report .country h3 {
+  color: #ef233c;
+}
+.reports .report-container .report .numbers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.reports .report-container .report .numbers h4 {
+  color: #248277;
+}
+.reports .report-container .report .numbers i {
+  font-size: 2rem;
+}
+.reports .report-container .report .numbers .fa-sort-up {
+  margin-top: 0.8rem;
+  color: #ef233c;
+}
+.reports .report-container .report .numbers .fa-sort-down {
+  margin-bottom: 0.8rem;
+  color: #248277;
+}
+
+.contact {
+  margin: 2rem 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.contact .form {
+  margin-top: 2rem;
+  position: relative;
+}
+.contact .form input {
+  border-radius: 10rem;
+  width: 40rem;
+  border: none;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+  padding: 2rem;
+}
+.contact .form button {
+  position: absolute;
+  right: 0.5rem;
+  top: 0.35rem;
+  padding: 1.4rem 4rem;
+}
+
+footer {
+  margin: 3rem 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+}
+footer .social-links i {
+  font-size: 1.4rem;
+  margin: 0 0.7rem;
+  color: #248277;
+  transition: 0.3s ease-in-out;
+}
+footer .social-links i:hover {
+  color: #ef233c;
+}
+
+.copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0;
+}/*# sourceMappingURL=style.css.map */
